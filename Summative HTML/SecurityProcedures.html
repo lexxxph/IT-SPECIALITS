@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+
+#return {
+            text-align: right;
+            font-family: 'Merriweather Sans';
+            font-weight: 700;
+            font-size: 15px;
+        }
+
+body {
+    position: relative;
+    background-color: #F5F5F5;
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+}
+
+.title-banner {
+    margin: 0;
+    padding: 0;
+    color: #263268;
+    font-size: 40px;
+    font-family: 'Gotham Black', sans-serif;
+    position: relative;
+    left: 170px;
+    top: 130px;
+    line-height: 80px;
+}
+
+.banner-image {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 640px;
+    bottom: 350px;
+}
+
+#banner-text {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    color: #1E282D;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    width: 450px;
+    height: 100px;
+    left: 170px;
+    top: 90px;
+}
+
+.author-button{
+    background-color: #3362CC;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 9px;
+    position: relative;
+    color: white;
+    width: 150px;
+    border-radius: 25px;
+    margin: 0;
+    padding: 2px;
+    text-align: center;
+    bottom: 540px;
+    left: 170px;
+}
+
+.banner {
+    margin: 0px;
+    padding: 0px;
+    background-color: whitesmoke;
+    background-size: 100px;
+    height: 582px;
+    width: 100%;
+    bottom: 100px;
+}
+
+.security-policy {
+    background-color:#1E282D;
+    margin: 0;
+    padding: 0;
+    height: 540px;
+}
+
+#security-policy-title {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gotham Black', 'sans serif';
+    color: #90B7CE;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+#security-subtext {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', 'sans serif';
+    color: #ECF2FF;
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+
+#security-subtext2 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', 'sans serif';
+    color: #ECF2FF;
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    top: 50px;   
+}
+
+#securing {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gotham Black', 'sans serif';
+    color: #90B7CE;
+    font-weight: 500;
+    font-size: 45px;
+    text-align: center;
+    position: relative;
+    top: 80px;
+}
+
+.security-icons {
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    left: 270px;
+    top: 110px;
+}
+
+#safe {
+    background-color: #407BFF;
+    padding: 25px;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 100px;
+}
+
+#protect {
+    background-color: #407BFF;
+    padding: 25px;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 100px;
+    left: 50px;
+}
+
+#theft {
+    background-color: #407BFF;
+    padding: 25px;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 100px;
+    left: 110px;
+}
+
+#safe-text {
+    padding: 0%;
+    margin: 0%;
+    color: white;
+    position: relative;
+    text-align: center;
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    top: 10px;
+    right: 300px;
+}
+
+#protect-text {
+    padding: 0%;
+    margin: 0%;
+    color: white;
+    position: relative;
+    text-align: center;
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    bottom: 30px;
+    
+}
+
+#theft-text {
+    padding: 0%;
+    margin: 0%;
+    color: white;
+    position: relative;
+    text-align: center;
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    bottom: 60px;
+    left: 315px;
+}
+
+.physical-security {
+    background-color:#FEFEFE;
+    margin: 0;
+    padding: 0;
+    height: 750px;
+}
+
+#physical-security-title {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gotham Black', 'sans serif';
+    color: #263238;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+#physical-subtext {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', 'sans serif';
+    color: #1E282D;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+
+#physical-subtext2 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', 'sans serif';
+    color: #1E282D;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    top: 50px;   
+}
+
+#locks {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gotham Black', 'sans serif';
+    color: #263268;
+    font-weight: 500;
+    font-size: 45px;
+    position: relative;
+    top: 100px;
+    left: 650px;
+}
+
+#lock-image {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    left: 70px;
+}
+
+#lock-text {
+    border-radius: 13px;
+    background-color: #ECF2FF;
+    width: 610px;
+    padding: 20px;
+    color: #263238;
+    position: relative;
+    font-family: 'Open Sans', 'sans serif';
+    font-size: 17px;
+    font-weight: 400;
+    text-align: right;
+    left: 530px;
+    bottom: 330px;
+}
+
+.ways {
+    background-color: #ECF2FF;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 2600px;
+    padding: 0%;
+    margin: 0%; 
+    position: relative;
+}
+
+#ways-title {
+    position: relative;
+    margin: 0%;
+    padding: 0%;
+    color: #3362CC;
+    font-family: 'Gotham Black', sans-serif;
+    font-size: 80px;
+    bottom: 500px;
+}
+
+#ways-text {
+    position: relative;
+    margin: 0%;
+    padding: 0%;
+    color: #1E282D;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    bottom: 500px;
+    line-height: 30px;
+    width: 700px;
+    height:auto;
+    text-align: center;
+    left: 330px;
+}
+
+#data-security {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    bottom: 400px
+}
+
+
+#backup-image {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 820px;
+    top: 500px
+}
+#backup-title {
+    color:#1B2C58;
+    position: relative;
+    text-align: right;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Open Sans', 'sans serif';
+    font-weight: 800;
+    font-size: 40px;
+    width: 610px;
+    left: 100px;
+    bottom: 430px;
+}
+#backup-text {
+    color: #1E282D;
+    position: relative;
+    text-align: right;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Open Sans', 'sans serif';
+    font-weight: 400;
+    font-size: 19px;
+    width: 600px;
+    line-height: 30px;
+    left: 100px;
+    bottom: 420px;
+
+}
+
+#permission-image {
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    left: 350px;
+    top: 900px;
+}
+#permission-title {
+    color:#1B2C58;
+    position: relative;
+    text-align: left;
+    margin: 0%;
+    padding: 0%;
+    line-height: 45px;
+    font-family: 'Open Sans', 'sans serif';
+    font-weight: 800;
+    font-size: 40px;
+    width: 610px;
+    left: 700px;
+    bottom: 350px;
+}
+#permission-text {
+    color: #1E282D;
+    position: relative;
+    text-align: left;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Open Sans', 'sans serif';
+    font-weight: 400;
+    font-size: 19px;
+    width: 600px;
+    line-height: 30px;
+    left: 700px;
+    bottom: 330px;
+}
+
+#encryption-image {
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    left: 780px;
+    bottom: 10px;
+    top: 1350px;
+
+}
+#encryption-title {
+    color:#1B2C58;
+    position: relative;
+    text-align: right;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', 'sans serif';
+    font-weight: 800;
+    font-size: 40px;
+    width: 610px;
+    left: 100px;
+    line-height: 40px;
+    bottom: 280px;
+}
+#encryption-text {
+    color: #1E282D;
+    position: relative;
+    text-align: right;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', 'sans serif';
+    font-weight: 400;
+    font-size: 19px;
+    width: 600px;
+    line-height: 30px;
+    left: 100px;
+    bottom: 260px;
+
+}
+
+#wiping-image {
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    right: 760px;
+    top: 1720px;
+}
+#wiping-title {
+    color:#1B2C58;
+    position: relative;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    line-height: 45px;
+    font-family: 'Open Sans', 'sans serif';
+    font-weight: 800;
+    font-size: 40px;
+    width: 610px;
+    left: 700px;
+    bottom: 220px;
+}
+#wiping-text {
+    color: #1E282D;
+    position: relative;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', 'sans serif';
+    font-weight: 400;
+    font-size: 19px;
+    width: 600px;
+    line-height: 30px;
+    bottom: 200px;
+    left: 700px;
+}
+
+#recycle-image {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 2150px;
+    left: 800px;
+}
+#recycle-title {
+    color:#1B2C58;
+    position: relative;
+    text-align: right;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Open Sans', 'sans serif';
+    font-weight: 800;
+    font-size: 40px;
+    width: 610px;
+    bottom: 120px;
+    left: 90px;
+    line-height: 40px;
+}
+#recycle-text {
+    color: #1E282D;
+    position: relative;
+    text-align: right;
+    margin-bottom: 20px;
+    padding-bottom: 60px;
+    font-family: 'Open Sans', 'sans serif';
+    font-weight: 400;
+    font-size: 19px;
+    width: 600px;
+    line-height: 30px;
+    bottom: 120px;
+    left: 100px;
+
+}
+
+#size {
+    position: relative;
+    margin: 0%;
+    width: 100%;
+    height: 90px;
+}
+
+    
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/gotham" rel="stylesheet">      
+    <script src="https://kit.fontawesome.com/2c29eeb845.js" crossorigin="anonymous"></script>
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <title>Security Procedures</title>
+</head>
+<body>
+    <div id=gradient>
+        <div class=banner>
+            <div class=title-banner>
+                <h1>Security <br> Procedures</h1>
+            </div>
+            <div id=banner-text>
+                <h3>Security procedures ensure consistency in the implementation of a security control or execution of a security. Find out what are these procedures to secure your devices.</h3>
+            </div>
+            <div class=banner-image> 
+                <img src="https://i.pinimg.com/originals/98/9f/da/989fda6ebe734db1bff48d1ae867860a.png" alt="computer security">
+            </div>
+            <div class=author-button>
+                <h2>by Alexander Oxales</h2></div>
+        </div>
+    </div>
+    <div class=security-policy>
+        <h1 id=security-policy-title>Security Policy</h1>
+        <h3 id=security-subtext>Security policy is a set of security objectives that ensure the security of a network, the data <br> and the computers in an organization.
+        <h3 id=security-subtext2>These include policies for <b>Identification and Authentication, Passwords, <br> Acceptable Use, Remote Access, Network Maintenance,</b> and <b>Incident Handling.</b></h3>
+        </h3>
+        <h1 id=securing>Why do we need to secure our devices?</h1>
+        <div class=security-icons>
+            <img id=safe src="https://cdn-icons-png.flaticon.com/512/3643/3643948.png" width="100px"> 
+            <img id=protect src="https://cdn-icons-png.flaticon.com/512/4668/4668917.png" width="100px">
+            <img id=theft src="https://cdn-icons-png.flaticon.com/512/3039/3039348.png" width="100px">
+            <h3 id=safe-text>Ensure a safe network <br> environment</h3>
+            <h3 id=protect-text>Protect assets</h3>
+            <h3 id=theft-text>Prevent theft, vandalism, <br> and data loss</h3>
+        </div>
+    </div>
+
+    <div class=physical-security>
+        <h1 id=physical-security-title>Physical Security</h1>
+        <h3 id=physical-subtext>Physical security is also important as data can be stolen with the computer.
+        <h3 id=physical-subtext2>These include policies for <b>Access to an organization's premise <br> Access to restricted areas</b> and <b>Computing and network infrastructure.</b></h3>
+        </h3>
+        <h1 id=locks>Types of Secure Locks</h1>
+        <img id=lock-image src="https://www.getillustrations.com/packs/gradient-isometric-office-illustrations/scenes/_1x/security%20_%20protection,%20safety,%20lock,%20padlock,%20privacy,%20key,%20password,%20passkey_md.png" alt="locking" width="450px">
+        <div>
+            <h2 id=lock-text>
+                <b>Conventional lock</b> - Requires a key into the door handle mechanism.<br>
+                <b>Deadbolt lock</b> - Requires entering the key into a lock separate <br>from the door handle 
+                mechanism. <br>
+                <b>Electronic lock</b>- Requires entering a PIN combination into the keypad. <br>
+                <b>Token-based lock</b> - Requires a secure card by tapping or swiping. <br>
+                <b>biometric lock</b>- Requires reading fingerprint by using a biometric scanner. <br>
+                <b>Multifactor lock</b> - A lock that uses a combination of the above mechanisms. <br>
+            </h2>
+        </div>
+    </div>
+        <div class=ways>
+            <img id=data-security src="https://cdn.shrm.org/image/upload/c_crop%2Ch_1151%2Cw_1151%2Cx_0%2Cy_0/c_fit%2Cf_auto%2Cq_auto%2Cw_767/v1/Tools%20and%20Samples/HubPages_1x1_ManagingInternalThreats_1_i56lje?databtoa=eyIxeDEiOnsieCI6MCwieSI6MCwieDIiOjExNTEsInkyIjoxMTUxLCJ3IjoxMTUxLCJoIjoxMTUxfX0%3D" alt="data security" width="700px">
+            <h1 id=ways-title>How to Secure Data</h1>
+            <h4 id=ways-text><b>Data</b> is likely to be an organization's most valuable 
+                assets. <br>It can be lost or damaged in circumstances such 
+                as <B>theft, equipment failure, or a disaster.</B> We can protect our data using data 
+                <b>backups, file/folder encryption and permissions.</b>
+                </h4>
+            
+            <div id=backup>
+                <img id=backup-image src="https://cdn-icons-png.flaticon.com/512/2818/2818765.png" alt="backup" width="300px">
+                <h2 id=backup-title>DATA BACKUP</h2>
+                <h4 id=backup-text>Backing up data is one of the<br>most effective ways of protecting against data loss<br><br>
+                A data backup stores a copy of the information <br>on a computer to removable backup media and should be performed on a daily basis.<br><br>
+                Windows hosts have a <b>backup and restore utility</b> while macOS devices have <b>Time Machine Utility</b> for backup.
+                </h4>
+            </div>
+           
+                <img id=permission-image src="https://cdn-icons-png.flaticon.com/512/1642/1642299.png" alt="permission" width="300px">   
+                <h2 id=permission-title>FILE AND FOLDER PERMISSIONS</h2>
+                <h4 id=permission-text>Permissions are rules you 
+                    configure to limit access for users. <br>
+                    <br> Users should be limited to only the 
+                    resources they need in a computer 
+                    or on a network. 
+                <br><br> There are basically six types of permissions in Windows: <br><b>Full Control, Modify, Read & Execute, List Folder Contents, Read, and Write.</b> </h4>
+            
+                <img id=encryption-image src="https://cdn-icons-png.flaticon.com/512/1849/1849534.png" alt="encryption" width="300px">
+                <h2 id=encryption-title>FILE AND FOLDER ENCRYPTION</h2>
+                <h4 id=encryption-text>File encryption protects individual files <BR>or file systems by encrypting them with a specific key, making them accessible only to the keyholder. <BR><BR> The goal is to prevent malicious or unauthorized parties from accessing files that are stored on the disk. <BR><br>
+                    <B>Encrypting File System (EFS)</B> is a Windows feature <br> that can encrypt data.
+                </h4>
+                
+                <img id=wiping-image src="https://cdn-icons-png.flaticon.com/512/5433/5433079.png" alt="wiping" width="300px">
+                <h2 id=wiping-title>DATA WIPING</h2>
+                <h4 id=wiping-text>Protecting data also includes removing files 
+                    from storage devices when they are no longer 
+                    needed. <br>
+                    <br> <b>Software tools</b> can be used to recover folders, 
+                    files, and even entire partitions.
+                <br><br> Other storage media and documents can be destroyed by <B>shredding or incineration.    </B></h4>
+      
+                <img id=recycle-image src="https://cdn-icons-png.flaticon.com/512/1373/1373142.png" alt="recycle" width="300px">
+                <h2 id=recycle-title>HARD DRIVE <br>RECYCLING AND DESTRUCTION</h2>
+                <h4 id=recycle-text>When a storage media is no longer needed,<br>the media can either be:<br><BR><B>Destroyed</B> - Destroying the hard drive 
+                    fully ensures that data cannot be recovered from a hard drive. <BR><br>
+                    <B>Recycled</B> - Hard drives that have been 
+                    wiped can be reused in other 
+                    computers. The drive can be 
+                    reformatted, and a new operating 
+                    system installed. 
+                </h4>
+                
+        </div>
+
+<h3 id=return style="text-align:right;color: white;"><big><a href="Homepage.html">Return to Homepage</a></big></h3> 
+
+</body>
+</html>
